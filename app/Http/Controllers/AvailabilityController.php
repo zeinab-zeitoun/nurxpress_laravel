@@ -32,7 +32,6 @@ class AvailabilityController extends Controller
     }
     public function store(Request $request)
     {
-        //add validate data
 
         //get the auth nurse
         $user = auth()->user();

@@ -16,6 +16,7 @@ class CheckRegular
      */
     public function handle(Request $request, Closure $next)
     {
+        // get role of auth user
         $role = auth()->user()->role;
         if (!$role == "regular")
             return response()->json("You do not have access to this page", 403);

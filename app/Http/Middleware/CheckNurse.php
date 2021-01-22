@@ -16,6 +16,7 @@ class CheckNurse
      */
     public function handle(Request $request, Closure $next)
     {
+        // get role of auth user
         $role = auth()->user()->role;
 
         if ($role !== "nurse")

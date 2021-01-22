@@ -16,7 +16,7 @@ class UserController extends Controller
         return $emails;
     }
 
-    //get auth user info
+    //get auth user info from user table and add first and last name
     public function authUser()
     {
         $user = auth()->user();

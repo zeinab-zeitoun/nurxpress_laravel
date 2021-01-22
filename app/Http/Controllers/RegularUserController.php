@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class RegularUserController extends Controller
 {
+    // get info of auth user
     public function index()
     {
         $id = auth()->user()->id;
@@ -14,6 +15,7 @@ class RegularUserController extends Controller
         return $regular_user;
     }
 
+    // add new user
     public function store(Request $request)
     {
         //validate the request data
