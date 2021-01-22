@@ -22,6 +22,7 @@ class AvailabilityController extends Controller
         return $unavailable;
     }
 
+    // get availability of certain nurse
     public function show($nurse_id)
     {
         $unavailable = Availability::where('nurse_id', $nurse_id)
