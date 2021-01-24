@@ -4,7 +4,7 @@
 
 3.  Go to the project directory: composer install
 
-4.  Copy the example env file and make the required configuration changes in the .env file:
+4.  Copy the .env.example file and make the required configuration changes in the .env file:
 
     Run the command in the terminal: cp .env.example .env
 
