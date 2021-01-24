@@ -37,6 +37,7 @@
     From Firebase navigate to Project settings -> Service accounts -> Generate a new private key -> Generate Key.
 
     Open the downloaded file and copy and paste it to the firebase credentials file (json file) in the project
+    
     The file should look like:
 
         {
