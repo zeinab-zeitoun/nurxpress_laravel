@@ -119,10 +119,12 @@ Route::group(['middleware' => 'auth:api'], function () {
 
     //get nurse's details
     Route::get('/details/{nurse_id}', [DetailsController::class, 'show']);
+
+    //logout
+    Route::get('/logout', [AuthController::class, 'logout']);
 });
 
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
-Route::get('/logout', [AuthController::class, 'logout']);
 
 Route::get('/emails', [UserController::class, 'emails']);
