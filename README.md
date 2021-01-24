@@ -8,14 +8,19 @@
 
     Run the command in the terminal: cp .env.example .env
 
-    Create a new database <database-name> and edit the below in the .env accordingly:
+    Create a new database "database-name" and edit the below in the .env accordingly:
 
     DB_CONNECTION=mysql
+
     DB_HOST=127.0.0.1
+
     DB_PORT=3306
-    DB_DATABASE=<database-name>
-    DB_USERNAME=<mysql-username>
-    DB_PASSWORD= <mysql-password>
+
+    DB_DATABASE="database-name"
+
+    DB_USERNAME="mysql-username"
+
+    DB_PASSWORD= "mysql-password"
 
 5. Run command in terminal: php artisan migrate (to deploy the database)
 
@@ -41,13 +46,21 @@
 
     {
     "type": "",
+
     "project_id": "",
+
     "private_key_id": "",
+
     "private_key": "",
+
     "client_id": "",
+
     "auth_uri": "",
+
     "token_uri": "",
+
     "auth_provider_x509_cert_url": "",
+
     "client_x509_cert_url": ""
     }
 
