@@ -4,9 +4,11 @@
 
 3.  Go to the project directory: composer install
 
-4.  Copy the .env.example file and make the required configuration changes in the .env file:
+4.  Copy the .env.example file as follows:
 
     Run the command in the terminal: cp .env.example .env
+
+    Then make the required configuration changes in the .env file:
 
     Create a new database "database-name" and edit the below in the .env accordingly:
 
@@ -37,7 +39,7 @@
     From Firebase navigate to Project settings -> Service accounts -> Generate a new private key -> Generate Key.
 
     Open the downloaded file and copy and paste it to the firebase credentials file (json file) in the project
-    
+
     The file should look like:
 
         {
